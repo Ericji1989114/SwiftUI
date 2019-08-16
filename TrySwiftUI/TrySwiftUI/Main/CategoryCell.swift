@@ -10,25 +10,49 @@ import SwiftUI
 
 struct CategoryCell: View {
     
-    let name: String
+    let item: Category
     
     var body: some View {
-        HStack {
-            Text(name)
+        NavigationLink(destination: nextView(with: self.item.id)) {
+            HStack {
+                Text(item.name)
                 .font(.system(size: 14))
                 .foregroundColor(.black)
-            Spacer()
-            Image(systemName: "arrow.right.circle")
-            .imageScale(.medium)
-            .foregroundColor(.blue)
+                Spacer()
+                Image(systemName: "arrow.right.circle")
+                .imageScale(.medium)
+                .foregroundColor(.blue)
+            }
+        }
+        
+    }
+    
+    fileprivate func nextView(with id: Int) -> some View {
+        Group {
+            if id == 0 {
+                Text("")
+            } else if id  == 1 {
+                Text("")
+            } else {
+                StateView()
+            }
         }
     }
+    
+}
+
+fileprivate struct DeveloppingView: View {
+    
+    var body: some View {
+        Text("Waiting...")
+    }
+    
 }
 
 #if DEBUG
 struct CategoryCell_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCell(name: "Table View").previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 100))
+        CategoryCell(item: Category(id: 0, name: "Table View")).previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 50))
     }
 }
 #endif

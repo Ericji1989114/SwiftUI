@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3112FA2306936C00830D26 /* YjiScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3112F92306936C00830D26 /* YjiScrollView.swift */; };
+		4C3112FC2306992400830D26 /* YjiAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3112FB2306992400830D26 /* YjiAppInfoView.swift */; };
 		4C54120622F7CB8800592845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54120522F7CB8800592845 /* AppDelegate.swift */; };
 		4C54120822F7CB8800592845 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54120722F7CB8800592845 /* SceneDelegate.swift */; };
 		4C54120A22F7CB8800592845 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54120922F7CB8800592845 /* ContentView.swift */; };
@@ -14,9 +16,12 @@
 		4C54120F22F7CB8A00592845 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C54120E22F7CB8A00592845 /* Preview Assets.xcassets */; };
 		4C54121222F7CB8A00592845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C54121022F7CB8A00592845 /* LaunchScreen.storyboard */; };
 		4C54121D22F7EC7F00592845 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54121C22F7EC7F00592845 /* CategoryCell.swift */; };
+		4C54122E22F7FC5600592845 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54122D22F7FC5600592845 /* StateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3112F92306936C00830D26 /* YjiScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YjiScrollView.swift; sourceTree = "<group>"; };
+		4C3112FB2306992400830D26 /* YjiAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YjiAppInfoView.swift; sourceTree = "<group>"; };
 		4C54120222F7CB8800592845 /* TrySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C54120522F7CB8800592845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C54120722F7CB8800592845 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		4C54121122F7CB8A00592845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C54121322F7CB8A00592845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C54121C22F7EC7F00592845 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4C54122D22F7FC5600592845 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3112F82306933600830D26 /* Scroll View */ = {
+			isa = PBXGroup;
+			children = (
+				4C3112F92306936C00830D26 /* YjiScrollView.swift */,
+				4C3112FB2306992400830D26 /* YjiAppInfoView.swift */,
+			);
+			path = "Scroll View";
+			sourceTree = "<group>";
+		};
 		4C5411F922F7CB8800592845 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +73,8 @@
 		4C54120422F7CB8800592845 /* TrySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4C3112F82306933600830D26 /* Scroll View */,
+				4C54122C22F7FC3B00592845 /* @State */,
 				4C54121B22F7E5D400592845 /* Main */,
 				4C54120522F7CB8800592845 /* AppDelegate.swift */,
 				4C54120722F7CB8800592845 /* SceneDelegate.swift */,
@@ -84,6 +101,14 @@
 				4C54120922F7CB8800592845 /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		4C54122C22F7FC3B00592845 /* @State */ = {
+			isa = PBXGroup;
+			children = (
+				4C54122D22F7FC5600592845 /* StateView.swift */,
+			);
+			path = "@State";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3112FA2306936C00830D26 /* YjiScrollView.swift in Sources */,
+				4C54122E22F7FC5600592845 /* StateView.swift in Sources */,
 				4C54120622F7CB8800592845 /* AppDelegate.swift in Sources */,
 				4C54120822F7CB8800592845 /* SceneDelegate.swift in Sources */,
+				4C3112FC2306992400830D26 /* YjiAppInfoView.swift in Sources */,
 				4C54120A22F7CB8800592845 /* ContentView.swift in Sources */,
 				4C54121D22F7EC7F00592845 /* CategoryCell.swift in Sources */,
 			);

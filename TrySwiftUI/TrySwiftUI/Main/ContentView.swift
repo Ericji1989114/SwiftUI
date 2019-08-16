@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Category {
+struct Category: Identifiable {
     let id: Int
     let name: String
 }
@@ -16,18 +16,19 @@ struct Category {
 struct ContentView: View {
     
     let datasource: [Category] = [
-        Category(id: 0, name: "Table View"),
-        Category(id: 1, name: "Scroll View"),
-        Category(id: 2, name: "Navigation Item")
+        Category(id: 0, name: "Scroll View"),
+        Category(id: 1, name: "Navigation Item"),
+        Category(id: 2, name: "@State")
     ]
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(datasource, id: \.id) { item in
-                    CategoryCell(name: item.name)
+            VStack {
+                List {
+                    ForEach(datasource, id: \.id) { item in
+                        CategoryCell(item: item)
+                    }
                 }
-                
             }
             .navigationBarTitle("Try SwiftUI")
         }
