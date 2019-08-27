@@ -2,7 +2,7 @@
 //  YjiScrollView.swift
 //  TrySwiftUI
 //
-//  Created by Eric | RP on 2019/08/16.
+//  Created by Eric on 2019/08/16.
 //  Copyright © 2019 Ericji. All rights reserved.
 //
 

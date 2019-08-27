@@ -34,7 +34,7 @@ struct CategoryCell: View {
             } else if id  == 1 {
                 YjiNavigationView()
             } else {
-                YjiStateView()
+                YjiTabStateView()
             } 
         }
     }

@@ -2,7 +2,7 @@
 //  YjiNavigationView.swift
 //  TrySwiftUI
 //
-//  Created by Eric | RP on 2019/08/27.
+//  Created by Eric on 2019/08/27.
 //  Copyright © 2019 Ericji. All rights reserved.
 //
 
