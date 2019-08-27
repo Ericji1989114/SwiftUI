@@ -2,7 +2,7 @@
 //  YjiStateView.swift
 //  TrySwiftUI
 //
-//  Created by Ji, Yun | Eric | RP on 2019/08/05.
+//  Created by Eric | RP on 2019/08/05.
 //  Copyright © 2019 Ericji. All rights reserved.
 //
 
