@@ -5,10 +5,10 @@
 
 | Status | Topic |
 ---------|------------
- ⌛️ | TableView
- ⌛️ | NavigationController
- ⌛️ | ScrollView
- ⌛️ | Free Layout setting
+ ✅ | TableView
+ ✅ | NavigationController
+ ✅ | ScrollView
+ 👀 | Free Layout setting
  ⌛️ | Interaction
  
  
@@ -18,8 +18,8 @@
 	* general delegate implementation.
 	* customized cell
 * NavigationController
-	* push / present functionality
-	* customized left / right navigation bar item
+	* push / pop functionality
+	* customized navigation bar item
 * ScollView
 	* implement a introduction view
 * Free layout setting

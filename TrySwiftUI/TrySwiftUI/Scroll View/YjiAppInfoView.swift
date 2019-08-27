@@ -18,11 +18,11 @@ struct YjiAppInfoView: View {
         VStack(alignment: .center) {
             Image(imageName)
             .resizable()
-            .frame(width: 50, height: 50, alignment: .center)
+            .frame(width: 80, height: 80, alignment: .center)
             Text(createdTime)
-            .font(.system(.subheadline))
+            .font(.headline)
             Text(description)
-            .font(.system(size: 10))
+            .font(.system(.body))
             .frame(maxWidth: 50)
         }
         

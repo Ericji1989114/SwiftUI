@@ -1,5 +1,5 @@
 //
-//  StateView.swift
+//  YjiStateView.swift
 //  TrySwiftUI
 //
 //  Created by Ji, Yun | Eric | RP on 2019/08/05.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct StateView: View {    
+struct YjiStateView: View {    
     
     @State private var testInt: Int = 0
     
@@ -37,9 +37,9 @@ struct StateView: View {
 }
 
 #if DEBUG
-struct StateView_Previews: PreviewProvider {
+struct YjiStateView_Previews: PreviewProvider {
     static var previews: some View {
-        StateView()
+        YjiStateView()
     }
 }
 #endif

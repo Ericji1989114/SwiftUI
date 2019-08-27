@@ -30,12 +30,12 @@ struct CategoryCell: View {
     fileprivate func nextView(with id: Int) -> some View {
         Group {
             if id == 0 {
-                Text("")
+                YjiScrollView()
             } else if id  == 1 {
-                Text("")
+                YjiNavigationView()
             } else {
-                StateView()
-            }
+                YjiStateView()
+            } 
         }
     }
     
@@ -52,7 +52,7 @@ fileprivate struct DeveloppingView: View {
 #if DEBUG
 struct CategoryCell_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCell(item: Category(id: 0, name: "Table View")).previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 50))
+        CategoryCell(item: Category(id: 0, name: "Table View Cell")).previewLayout(.fixed(width: UIScreen.main.bounds.width, height: 50))
     }
 }
 #endif

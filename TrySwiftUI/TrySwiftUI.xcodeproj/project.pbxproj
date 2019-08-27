@@ -16,7 +16,8 @@
 		4C54120F22F7CB8A00592845 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C54120E22F7CB8A00592845 /* Preview Assets.xcassets */; };
 		4C54121222F7CB8A00592845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C54121022F7CB8A00592845 /* LaunchScreen.storyboard */; };
 		4C54121D22F7EC7F00592845 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54121C22F7EC7F00592845 /* CategoryCell.swift */; };
-		4C54122E22F7FC5600592845 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54122D22F7FC5600592845 /* StateView.swift */; };
+		4C54122E22F7FC5600592845 /* YjiStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C54122D22F7FC5600592845 /* YjiStateView.swift */; };
+		4C8042FC2314B81800CB7D0C /* YjiNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8042FB2314B81800CB7D0C /* YjiNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +32,8 @@
 		4C54121122F7CB8A00592845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C54121322F7CB8A00592845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C54121C22F7EC7F00592845 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
-		4C54122D22F7FC5600592845 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		4C54122D22F7FC5600592845 /* YjiStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YjiStateView.swift; sourceTree = "<group>"; };
+		4C8042FB2314B81800CB7D0C /* YjiNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YjiNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		4C54120422F7CB8800592845 /* TrySwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4C8042FA2314B7C200CB7D0C /* NavigationItem */,
 				4C3112F82306933600830D26 /* Scroll View */,
 				4C54122C22F7FC3B00592845 /* @State */,
 				4C54121B22F7E5D400592845 /* Main */,
@@ -106,9 +109,17 @@
 		4C54122C22F7FC3B00592845 /* @State */ = {
 			isa = PBXGroup;
 			children = (
-				4C54122D22F7FC5600592845 /* StateView.swift */,
+				4C54122D22F7FC5600592845 /* YjiStateView.swift */,
 			);
 			path = "@State";
+			sourceTree = "<group>";
+		};
+		4C8042FA2314B7C200CB7D0C /* NavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				4C8042FB2314B81800CB7D0C /* YjiNavigationView.swift */,
+			);
+			path = NavigationItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C3112FA2306936C00830D26 /* YjiScrollView.swift in Sources */,
-				4C54122E22F7FC5600592845 /* StateView.swift in Sources */,
+				4C54122E22F7FC5600592845 /* YjiStateView.swift in Sources */,
 				4C54120622F7CB8800592845 /* AppDelegate.swift in Sources */,
 				4C54120822F7CB8800592845 /* SceneDelegate.swift in Sources */,
 				4C3112FC2306992400830D26 /* YjiAppInfoView.swift in Sources */,
 				4C54120A22F7CB8800592845 /* ContentView.swift in Sources */,
 				4C54121D22F7EC7F00592845 /* CategoryCell.swift in Sources */,
+				4C8042FC2314B81800CB7D0C /* YjiNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

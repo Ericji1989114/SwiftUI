@@ -10,20 +10,19 @@ import SwiftUI
 
 struct YjiScrollView: View {
     var body: some View {
-        NavigationView {
-            ScrollView(.horizontal) {
-                HStack(alignment: .top) {
-                    YjiAppInfoView(imageName: "pfu", createdTime: "2014", description: "Documents application")
-                        .padding(.leading, 50)
-                    YjiAppInfoView(imageName: "dianrong", createdTime: "2015", description: "P2P application")
-                        .padding(.leading, 50)
-                    YjiAppInfoView(imageName: "casio", createdTime: "2016", description: "SNS")
-                        .padding(.leading, 50)
-                    YjiAppInfoView(imageName: "yumemi1", createdTime: "2016", description: "online shopping application")
-                        .padding(.leading, 50)
-                }
-            }
-            .navigationBarTitle("About Me")
+        ScrollView(.horizontal) {
+            HStack(alignment: .top) {
+                YjiAppInfoView(imageName: "pfu", createdTime: "2014", description: "ScanSnap")
+                    .padding(.leading, 50)
+                YjiAppInfoView(imageName: "dianrong", createdTime: "2015", description: "Dianrong")
+                    .padding(.leading, 50)
+                YjiAppInfoView(imageName: "casio", createdTime: "2016", description: "Snap Story")
+                    .padding(.leading, 50)
+                YjiAppInfoView(imageName: "yumemi1", createdTime: "2016", description: "Uniqlo")
+                    .padding(.leading, 50)
+                YjiAppInfoView(imageName: "rpay", createdTime: "2018", description: "Rakuten Pay")
+                    .padding(.leading, 50)
+            }.navigationBarTitle("About Me")
         }
     }
 }
