@@ -6,9 +6,11 @@
 | Status | Topic |
 ---------|------------
  ✅ | TableView
- ✅ | NavigationController
- ✅ | ScrollView
- 👀 | Free Layout setting
+ ✅ | Navigation Controller
+ ✅ | Scroll View
+ ✅ | Tab Bar View
+ ✅ | @State (with/without Binding value)
+ 👀 | @EnvironmentObject
  ⌛️ | Interaction
  
  
@@ -22,16 +24,29 @@
 	* customized navigation bar item
 * ScollView
 	* implement a introduction view
-* Free layout setting
-	* button
-	* label
-	* textfield
-	* view
-	* can set layout in anywhere (top, left, right, bottom)	
+* Tab Bar View
+	* implement a simple tab bar view
+* @State 
+	* implement an example to explain how to use it
+* @EnvironmentObject 
+	* implement an example to explain how to use it
 * Interaction 🏆
-	* Create a swiftUI instance which can be used by existing view controller.
+	* Create a SwiftUI instance which can be used by existing view controller.
 	* SwiftUI instance can also move to view controller
-	
+
+## Comparation
+The following elements of list have been involved in the prject.
+
+| UIKit | SwiftUI |
+------|--------|---
+UITableView | List
+UIScrollView | ScrollView
+UINavigationController | NavigationView
+UILabel | Text
+UIButton | Button 
+UISwitch | Toggle
+UIImage | Image
+
 
  
  
