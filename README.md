@@ -38,7 +38,7 @@
 The following elements of list have been involved in the prject.
 
 | UIKit | SwiftUI |
-------|--------|---
+------|----------
 UITableView | List
 UIScrollView | ScrollView
 UINavigationController | NavigationView
